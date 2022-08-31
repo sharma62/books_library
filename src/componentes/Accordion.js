@@ -1,10 +1,18 @@
 import React from 'react'
+import { useState } from 'react';
 
 const Accordion = (props) => {
-   function clickHandler(){
-    console.log('clickHandler');
+    const [currText, setText] = useState('');
 
-   }
+    function clickToUpper() {
+        setText(currText.toUpperCase());
+    }
+    function clickToLower() {
+        setText(currText.toLowerCase());
+    }
+    function changeHandler(event) {
+        setText(event.target.value);
+    }
     return (
         <>
             <div className="container">
@@ -20,10 +28,11 @@ const Accordion = (props) => {
                                 <div className="accordion-body">
 
                                     <div className="mb-3">
-                                        <label htmlfor="exampleFormControlTextarea1" className="form-label">Enter Text </label>
-                                        <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                        <label htmlFor="exampleFormControlTextarea1" className="form-label">Enter Text </label>
+                                        <textarea className="form-control" id="exampleFormControlTextarea1" rows="4" value={currText} onChange={changeHandler} placeholder="Enter Text "></textarea>
                                     </div>
-                                    <input type="button" value="Uppercase" className=" btn btn-primary" onClick={clickHandler} />
+                                    <input type="button" value="Uppercase" className="mx-1 btn btn-primary" onClick={clickToUpper} />
+                                    <input type="button" value="Uppercase" className="mx-1 btn btn-primary" onClick={clickToLower} />
                                 </div>
                             </div>
                         </div>
