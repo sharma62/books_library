@@ -48,7 +48,7 @@ Navbar.defaultProps = {
 
 
 // define prototype props  
-Navbar.protoType = {
-   title :props.string,
-   features :props.string
-}
+// Navbar.protoType = {
+//    title :props.string,
+//    features :props.string
+// }
