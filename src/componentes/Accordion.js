@@ -25,6 +25,7 @@ const Accordion = (props) => {
                                 </button>
                             </h2>
                             <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <label htmlFor="reading time" className='p-3'> Read Time : {0.008 * currText.split(" ").length} Min</label>
                                 <div className="accordion-body">
 
                                     <div className="mb-3">
@@ -33,6 +34,7 @@ const Accordion = (props) => {
                                     </div>
                                     <input type="button" value="Uppercase" className="mx-1 btn btn-primary" onClick={clickToUpper} />
                                     <input type="button" value="Uppercase" className="mx-1 btn btn-primary" onClick={clickToLower} />
+                                    <p className='my-4'> Total : {currText.split(" ").length} words  and  {currText.length} Characters</p>
                                 </div>
                             </div>
                         </div>
