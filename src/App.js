@@ -1,13 +1,16 @@
  import Accordion from './componentes/Accordion';
 import Navbar from './componentes/Navbar';
 import ItemCard from './componentes/store/ItemCard';
+import Jumbotron from './Jumbotron';
  
 function App() {
+  
      
   return (
     <>
+
       <Navbar title="Books_library" features="Home" bookStore="BookStore" />
-      <Accordion title="Text Ground " className="my-5" />
+      <Jumbotron heading =" Welcome To Library" helperText = "Here you can connect with library"  moreInfo= "coming soon" actionSrc="/"/>
       <div className="container">
         <h2 className='text-center py-4'>Books</h2>
         <div className="row my-4">
@@ -18,6 +21,7 @@ function App() {
         </div>
       </div><hr />
 
+      <Accordion title="Text Ground " className="my-5" />
       
     </>
   );
