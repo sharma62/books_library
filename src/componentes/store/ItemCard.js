@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Item_card(props) {
+export default function ItemCard(props) {
     return (
         <>
         <div className="col-3">
@@ -9,8 +9,8 @@ export default function Item_card(props) {
                     <div className="card-body">
                         <h5 className="card-title">{props.title}</h5>
                         <p className="card-text">{props.about}.</p>
-                        <a href="#" className="btn btn-primary">Read</a>
-                        <a href="#" className="btn btn-primary mx-3">Buy</a>
+                        <a href="/" className="btn btn-primary">Read</a>
+                        <a href="/" className="btn btn-primary mx-3">Buy</a>
                     </div>
             </div>
         </div>

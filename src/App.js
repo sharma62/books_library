@@ -1,7 +1,7 @@
 import Accordion from './componentes/Accordion';
 import Navbar from './componentes/Navbar';
-import Item_card from './componentes/store/Item_card';
-
+import ItemCard from './componentes/store/ItemCard';
+ 
 function App() {
   return (
     <>
@@ -9,11 +9,10 @@ function App() {
       <Accordion title="Text Ground " className="my-5" />
       <div className="container">
         <div className="row">
-
-          <Item_card title="C++" about="Good Explanation" imgSrc="https://i.postimg.cc/wM0QGsxg/Cpp.jpg" />
-          <Item_card title="Opreating System" about="Good Explanation" imgSrc="https://i.postimg.cc/9fLXzmfz/OS.jpg" />
-          <Item_card title="TCP / IP " about="Good Explanation" imgSrc="https://i.postimg.cc/NfvK302w/TCP.jpg" />
-
+          <ItemCard title="C++" about="Good Explanation" imgSrc="https://i.postimg.cc/wM0QGsxg/Cpp.jpg" />
+          <ItemCard title="Opreating System" about="Good Explanation" imgSrc="https://i.postimg.cc/9fLXzmfz/OS.jpg" />
+          <ItemCard title="TCP / IP " about="Good Explanation" imgSrc="https://i.postimg.cc/NfvK302w/TCP.jpg" />
+          <ItemCard title="python" about="Good Explanation" imgSrc="C:\Users\LENOVO\OneDrive\Desktop\React_project\books_library\assets\img\python.jpg" />
         </div>
       </div>
     </>
