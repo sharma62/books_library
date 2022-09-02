@@ -41,7 +41,7 @@ const Accordion = (props) => {
                     </div>
 
                 </div>
-            </div>
+            </div><hr />
         </>
     )
 }
