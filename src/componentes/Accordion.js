@@ -13,7 +13,7 @@ const Accordion = (props) => {
     function changeHandler(event) {
         setText(event.target.value);
     }
-    return (
+     return (
         <>
             <div className="container">
                 <div className="row">
@@ -32,9 +32,9 @@ const Accordion = (props) => {
                                         <label htmlFor="exampleFormControlTextarea1" className="form-label">Enter Text </label>
                                         <textarea className="form-control" id="exampleFormControlTextarea1" rows="4" value={currText} onChange={changeHandler} placeholder="Enter Text "></textarea>
                                     </div>
-                                    <input type="button" value="Uppercase" className="mx-1 btn btn-primary" onClick={clickToUpper} />
-                                    <input type="button" value="Uppercase" className="mx-1 btn btn-primary" onClick={clickToLower} />
-                                    <p className='my-4'> Total : {currText.split(" ").length} words  and  {currText.length} Characters</p>
+                                    <input type="button" value="Upper case" className="mx-1 btn btn-primary" onClick={clickToUpper} />
+                                    <input type="button" value="Lower case" className="mx-1 btn btn-primary" onClick={clickToLower} />
+                                     <p className='my-4'> Total : {currText.split(" ").length} words  and  {currText.length} Characters</p>
                                 </div>
                             </div>
                         </div>

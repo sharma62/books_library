@@ -1,0 +1,18 @@
+
+.green{color: green;}
+.Pink{color: pink;}
+.red{color: red;}
+
+#Dy_greeting{
+  padding: 10px 20px 10px 10px;
+  width: 400px;
+  border-radius:1rem ;
+
+}
+.btn{
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
