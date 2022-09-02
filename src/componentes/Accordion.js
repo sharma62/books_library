@@ -13,6 +13,13 @@ const Accordion = (props) => {
     function changeHandler(event) {
         setText(event.target.value);
     }
+    function clickToCopy() {
+        let textarea = document.getElementById('textarea');
+        textarea.select();
+        navigator.clipboard.writeText(textarea.value);
+
+    }
+
      return (
         <>
             <div className="container">
@@ -30,10 +37,11 @@ const Accordion = (props) => {
 
                                     <div className="mb-3">
                                         <label htmlFor="exampleFormControlTextarea1" className="form-label">Enter Text </label>
-                                        <textarea className="form-control" id="exampleFormControlTextarea1" rows="4" value={currText} onChange={changeHandler} placeholder="Enter Text "></textarea>
+                                        <textarea className="form-control" id="textarea" rows="4" value={currText} onChange={changeHandler} placeholder="Enter Text "></textarea>
                                     </div>
                                     <input type="button" value="Upper case" className="mx-1 btn btn-primary" onClick={clickToUpper} />
                                     <input type="button" value="Lower case" className="mx-1 btn btn-primary" onClick={clickToLower} />
+                                    <input type="button" value="Copy all" className="mx-1 btn btn-primary" onClick={clickToCopy} />
                                      <p className='my-4'> Total : {currText.split(" ").length} words  and  {currText.length} Characters</p>
                                 </div>
                             </div>

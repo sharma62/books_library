@@ -1,11 +1,17 @@
 import React from 'react'
+import DigitalClock from './DigitalClock';
 
 export default function Jumbotron(props) {
   return (
     <div>
-         <div className="jumbotron jumbotron-fluid py-5">
+         <div className="jumbotron jumbotron-fluid py-2">
             <div className="container">
-                <h1 className="display-3">{props.heading}</h1>
+              <div className="row">
+                <div className="col offset-7">
+                   <DigitalClock />
+                </div>
+              </div>
+                <h1 className="display-3"><strong>{props.heading}</strong></h1>
                 <p className="lead">{props.helperText}</p>
                 <hr className="my-2" />
                 <p>{props.moreInfo}</p>

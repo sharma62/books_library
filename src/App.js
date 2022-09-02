@@ -1,14 +1,13 @@
  import Accordion from './componentes/Accordion';
 import Navbar from './componentes/Navbar';
 import ItemCard from './componentes/store/ItemCard';
-import Jumbotron from './Jumbotron';
+import Jumbotron from './componentes/Jumbotron';
  
 function App() {
   
      
   return (
     <>
-
       <Navbar title="Books_library" features="Home" bookStore="BookStore" />
       <Jumbotron  title="Dive in Store" heading ="Welcome To Library" helperText = "Here you can connect with library"  moreInfo= "coming soon" actionSrc="/"/>
       <div className="container">
@@ -19,8 +18,7 @@ function App() {
           <ItemCard title="TCP / IP " about="Good Explanation" imgSrc="https://i.postimg.cc/W3rDy27d/TCP.jpg" readSrc="https://www.geeksforgeeks.org/tcp-ip-model/" />
           <ItemCard title="python" about="Good Explanation" imgSrc="https://i.postimg.cc/vmh9YSdh/python.jpg" readSrc="https://www.python.org/" />
         </div>
-      </div><hr />
-
+        </div><hr />
       <Accordion title="Text Ground " className="my-5" />
       
     </>
