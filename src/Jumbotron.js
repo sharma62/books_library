@@ -10,7 +10,7 @@ export default function Jumbotron(props) {
                 <hr className="my-2" />
                 <p>{props.moreInfo}</p>
                 <p className="lead">
-                    <a className="btn btn-primary btn-lg" href={props.actionSrc} role="button">Jumbo action name</a>
+                    <a className="btn btn-primary btn-lg" href={props.actionSrc} role="button">{props.title}</a>
                 </p>
             </div>
          </div>

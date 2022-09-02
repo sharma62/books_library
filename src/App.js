@@ -10,7 +10,7 @@ function App() {
     <>
 
       <Navbar title="Books_library" features="Home" bookStore="BookStore" />
-      <Jumbotron heading =" Welcome To Library" helperText = "Here you can connect with library"  moreInfo= "coming soon" actionSrc="/"/>
+      <Jumbotron  title="Dive in Store" heading ="Welcome To Library" helperText = "Here you can connect with library"  moreInfo= "coming soon" actionSrc="/"/>
       <div className="container">
         <h2 className='text-center py-4'>Books</h2>
         <div className="row my-4">
