@@ -1,3 +1,4 @@
+// import '../assets/img';
 import Accordion from './componentes/Accordion';
 import Navbar from './componentes/Navbar';
 import ItemCard from './componentes/store/ItemCard';
@@ -11,8 +12,8 @@ function App() {
         <div className="row">
           <ItemCard title="C++" about="Good Explanation" imgSrc="https://i.postimg.cc/wM0QGsxg/Cpp.jpg" />
           <ItemCard title="Opreating System" about="Good Explanation" imgSrc="https://i.postimg.cc/9fLXzmfz/OS.jpg" />
-          <ItemCard title="TCP / IP " about="Good Explanation" imgSrc="https://i.postimg.cc/NfvK302w/TCP.jpg" />
-          <ItemCard title="python" about="Good Explanation" imgSrc="C:\Users\LENOVO\OneDrive\Desktop\React_project\books_library\assets\img\python.jpg" />
+          <ItemCard title="TCP / IP " about="Good Explanation" imgSrc="https://i.postimg.cc/W3rDy27d/TCP.jpg" />
+          <ItemCard title="python" about="Good Explanation" imgSrc="https://i.postimg.cc/vmh9YSdh/python.jpg" />
         </div>
       </div>
     </>
