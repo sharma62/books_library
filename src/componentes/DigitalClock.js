@@ -11,7 +11,7 @@ const DigitalClock = ()=>{
  
     return (
         <>
-            <h1 className='h1 text-center py-4'>{cTime}</h1>
+            <h1 className='h2 text-center py-4'>{cTime}</h1>
         </>
     );
 }

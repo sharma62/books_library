@@ -5,7 +5,7 @@ import Jumbotron from './componentes/Jumbotron';
  
  export default function App() {
   
-  return (
+  return (  
     <>
       <Navbar title="Books_library" features="Home" bookStore="BookStore" />
       <Jumbotron  title="Dive in Store" heading ="Welcome To Library" helperText = "Here you can connect with library"  moreInfo= "coming soon" actionSrc="/"/>
