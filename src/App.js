@@ -3,9 +3,8 @@ import Navbar from './componentes/Navbar';
 import ItemCard from './componentes/store/ItemCard';
 import Jumbotron from './componentes/Jumbotron';
  
-function App() {
+ export default function App() {
   
-     
   return (
     <>
       <Navbar title="Books_library" features="Home" bookStore="BookStore" />
@@ -24,5 +23,3 @@ function App() {
     </>
   );
 }
-
-export default App;
