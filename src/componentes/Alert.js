@@ -1,13 +1,15 @@
 import React from 'react'
 
-export default function Alert(props) {
+function Alert(props) {
     return (
         <>
-            <div className="container">
-                <div class="alert alert-primary" role="alert">
-                    A simple primary alert—check it out!
+            <div className="container-fluid ">
+                <div class="alert alert-success" role="alert">
+                  <strong>{props.type}</strong> : <span>{props.msg}</span>
                 </div>
             </div>
         </>
     )
 }
+
+export default Alert;
