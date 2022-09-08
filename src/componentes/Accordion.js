@@ -6,9 +6,11 @@ const Accordion = (props) => {
 
     function clickToUpper() {
         setText(currText.toUpperCase());
+        props.showAlert("Converted into Uppercase","Success");
     }
     function clickToLower() {
         setText(currText.toLowerCase());
+        props.showAlert("Converted into LowerCase","Success");
     }
     function changeHandler(event) {
         setText(event.target.value);
@@ -17,8 +19,10 @@ const Accordion = (props) => {
         let textarea = document.getElementById('textarea');
         textarea.select();
         navigator.clipboard.writeText(textarea.value);
+        props.showAlert("Copied ","Success");
 
     }
+
 
      return (
         <>
