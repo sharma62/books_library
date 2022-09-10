@@ -46,7 +46,7 @@ const Accordion = (props) => {
                                     <input type="button" value="Upper case" className="mx-1 btn btn-primary" onClick={clickToUpper} />
                                     <input type="button" value="Lower case" className="mx-1 btn btn-primary" onClick={clickToLower} />
                                     <input type="button" value="Copy all" className="mx-1 btn btn-primary" onClick={clickToCopy} />
-                                     <p className='my-4'> Total : {currText.split(" ").length} words  and  {currText.length} Characters</p>
+                                     <p className='my-4'> Total : {currText.split(" ").length-1} words  and  {currText.length} Characters</p>
                                 </div>
                             </div>
                         </div>
