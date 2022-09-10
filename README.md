@@ -1,4 +1,5 @@
-# books_library
+# Books_library
+> A Library where you formate text and read soft copy of multiple books as well as buy. 
 
 # Getting Started with Clone the repo
 
