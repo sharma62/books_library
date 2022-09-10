@@ -23,7 +23,7 @@ function Greeting() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Hello Sir , <span style = {colorCode}> {greeting} </span> </h1>
+        <h1> Hello Sir , <span style = {colorCode}> {greeting} </span> </h1>
       </header>
     </div>
   );
