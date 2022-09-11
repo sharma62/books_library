@@ -6,11 +6,11 @@ const Accordion = (props) => {
 
     function clickToUpper() {
         setText(currText.toUpperCase());
-        props.showAlert("Converted into Uppercase","Success");
+        props.showAlert("Converted into Uppercase", "Success");
     }
     function clickToLower() {
         setText(currText.toLowerCase());
-        props.showAlert("Converted into LowerCase","Success");
+        props.showAlert("Converted into LowerCase", "Success");
     }
     function changeHandler(event) {
         setText(event.target.value);
@@ -19,13 +19,14 @@ const Accordion = (props) => {
         let textarea = document.getElementById('textarea');
         textarea.select();
         navigator.clipboard.writeText(textarea.value);
-        props.showAlert("Copied ","Success");
+        props.showAlert("Copied ", "Success");
 
     }
 
 
-     return (
+    return (
         <>
+            <h2 className="text-center py-3">Text PlayGround</h2>
             <div className="container">
                 <div className="row">
                     <div className="accordion my-4" id="accordionExample">
@@ -46,7 +47,7 @@ const Accordion = (props) => {
                                     <input type="button" value="Upper case" className="mx-1 btn btn-primary" onClick={clickToUpper} />
                                     <input type="button" value="Lower case" className="mx-1 btn btn-primary" onClick={clickToLower} />
                                     <input type="button" value="Copy all" className="mx-1 btn btn-primary" onClick={clickToCopy} />
-                                     <p className='my-4'> Total : {currText.split(" ").length-1} words  and  {currText.length} Characters</p>
+                                    <p className='my-4'> Total : {currText.split(" ").length - 1} words  and  {currText.length} Characters</p>
                                 </div>
                             </div>
                         </div>

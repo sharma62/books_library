@@ -22,7 +22,6 @@ export default function App() {
       <Jumbotron title="Dive in Store" heading="Welcome To Library" helperText="Here you can connect with library" moreInfo="Comming soon" actionSrc="/" />
       <Store />
       <Accordion title="Text Ground " className="my-5" showAlert= {showAlert} />
-
     </>
  );
 }
