@@ -1,5 +1,14 @@
 # Books_library
-> A Library where you formate text and read soft copy of multiple books as well as buy. 
+
+* Project page: Not publish yet
+* Repository: https://github.com/sharma62/books_library
+* Version: 1.0.0
+* License: BSD, see [LICENSE](LICENSE)
+
+## Description
+> A Library where you formate text and read soft copy of multiple books as well as buy.
+
+## Installation
 
 # Getting Started with Clone the repo
 
