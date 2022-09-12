@@ -20,9 +20,9 @@ export default function App() {
       <Navbar title="Books_library" features="Home" bookStore="BookStore"  />
       <Alert alert= {alert}/>
       <Jumbotron title="Dive in Store" heading="Welcome To Library" helperText="Here you can connect with library" moreInfo="Comming soon" actionSrc="/" />
-      <Store />npm
+      <Store />
       <Accordion title="Text Ground " className="my-5" showAlert= {showAlert} />
-      
+        
     </>
  );
 }

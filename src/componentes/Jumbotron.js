@@ -3,7 +3,7 @@ import DigitalClock from './DigitalClock';
 
 export default function Jumbotron(props) {
   return (
-    <div>
+    <>
          <div className="jumbotron jumbotron-fluid py-2">
             <div className="container">
               <div className="row">
@@ -14,12 +14,11 @@ export default function Jumbotron(props) {
                 <h1 className="display-3"><strong>{props.heading}</strong></h1>
                 <p className="lead">{props.helperText}</p>
                 <hr className="my-2" />
-                <marquee behavior="" direction="right" className="py-2 " style={{color: 'red'}} > {props.moreInfo}</marquee>
-                <p className="lead">
-                    <a className="btn btn-primary btn-lg" href={props.actionSrc} role="button">{props.title}</a>
+                 <p className="lead py-2">
+                    <a className="btn btn-primary btn-lg " href={props.actionSrc} role="button">{props.title}</a>
                 </p>
             </div>
          </div>
-    </div>
+    </>
   );
 }
