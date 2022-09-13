@@ -4,7 +4,7 @@ import DigitalClock from './DigitalClock';
 export default function Jumbotron(props) {
   return (
     <>
-         <div className="jumbotron jumbotron-fluid py-2">
+         <div className={`jumbotron jumbotron-fluid py-2 bg-${props.mode}`} style={{ color:props.mode==='dark' ? 'white':'#042743'}}>
             <div className="container">
               <div className="row">
                 <div className="col offset-7">
