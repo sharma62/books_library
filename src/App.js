@@ -14,10 +14,15 @@ export default function App() {
       setAlert(null);
     }, 5000);
   }
-
+    
+   const [Mode, setMode] = useState('dark');
+ 
+  const toggleMode = (toggle) => {
+    setMode(toggle);
+  }
   return (
     <>
-      <Navbar title="Books_library" features="Home" bookStore="BookStore"  />
+      <Navbar title="Books_library" features="Home" bookStore="BookStore" mode = {Mode} toggleMode={toggleMode}  />
       <Alert alert= {alert}/>
       <Jumbotron title="Dive in Store" heading="Welcome To Library" helperText="Here you can connect with library" moreInfo="Comming soon" actionSrc="/" />
       <Store />
