@@ -26,7 +26,7 @@ export default function App() {
       <Alert alert= {alert}/>
       <Jumbotron title="Dive in Store" heading="Welcome To Library" helperText="Here you can connect with library" moreInfo="Comming soon" actionSrc="/"  mode = {Mode} toggleMode= {toggleMode}/>
       <Store mode ={Mode} toggleMode= {toggleMode}  />
-      <Accordion title="Text Ground " className="my-5" showAlert= {showAlert} />
+      <Accordion title="Text Ground " className="my-5" showAlert= {showAlert}  mode ={Mode} toggleMode={toggleMode} />
         
     </>
  );
