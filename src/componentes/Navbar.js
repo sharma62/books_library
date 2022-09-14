@@ -19,7 +19,7 @@ export default function Navbar(props) {
     <nav className={`navbar navbar-expand-lg bg-${props.mode}`} style={{ color:props.mode==='dark' ? 'white':'#042743', height: "80px" }}>
 
       <div className="container-fluid">
-        <a className={`navbar-brand `} href='/'  style={{ color:props.mode==='dark' ? 'white':'#042743'}}>{(props.title)}</a>
+        <a className={`navbar-brand `} href='/'  style={{ color:props.mode==='dark' ? 'white':'#042743' }}> <img src="https://png.pngtree.com/template/20190316/ourmid/pngtree-books-logo-image_79143.jpg" width={'80px'} style={{borderRadius: '50px'}} alt={`${(props.title)}`}  /></a>
         <button className="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>

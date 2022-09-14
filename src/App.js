@@ -15,7 +15,7 @@ export default function App() {
     }, 5000);
   }
     
-   const [Mode, setMode] = useState('dark');
+   const [Mode, setMode] = useState('light');
  
   const toggleMode = (toggle) => {
     setMode(toggle);
