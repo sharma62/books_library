@@ -43,7 +43,7 @@ const Accordion = (props) => {
 
                                         <div className="mb-3">
                                             <label htmlFor="exampleFormControlTextarea1" className="form-label">Enter Text </label>
-                                            <textarea className={`form-control bg-${props.mode} `} style={{ color: props.mode === 'dark' ? 'light' : 'dark' }} id="textarea" rows="4" value={currText} onChange={changeHandler} placeholder="Enter Text "></textarea>
+                                            <textarea className={`form-control bg-${props.mode} `} style={{ color: props.mode === 'dark' ? 'white' : 'black' }} id="textarea" rows="4" value={currText} onChange={changeHandler} placeholder="Enter Text "></textarea>
                                         </div>
                                         <input type="button" value="Upper case" className="mx-1 btn btn-primary" onClick={clickToUpper} />
                                         <input type="button" value="Lower case" className="mx-1 btn btn-primary" onClick={clickToLower} />
