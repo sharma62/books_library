@@ -15,7 +15,6 @@
 > Firstly you clone `git clone  https://github.com/sharma62/books_library.git`.
 
 > then go inside diretory `cd book_library`
- 
 
 ## Available Scripts
 

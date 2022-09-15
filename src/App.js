@@ -4,6 +4,7 @@ import Store from './componentes/Store';
 import Jumbotron from './componentes/Jumbotron';
 import Alert from './componentes/Alert';
 import { useState } from 'react';
+import Footer from './componentes/Footer';
 
 export default function App() {
   const [alert, setAlert] = useState(null)
@@ -27,7 +28,7 @@ export default function App() {
       <Jumbotron title="Dive in Store" heading="Welcome To Library" helperText="Here you can connect with library" moreInfo="Comming soon" actionSrc="/"  mode = {Mode} toggleMode= {toggleMode}/>
       <Store mode ={Mode} toggleMode= {toggleMode}  />
       <Accordion title="Text Ground " className="my-5" showAlert= {showAlert}  mode ={Mode} toggleMode={toggleMode} />
-        
+      <Footer mode={Mode} ToggleMode= {toggleMode} />
     </>
  );
 }
