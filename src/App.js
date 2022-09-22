@@ -6,8 +6,7 @@ import Jumbotron from './componentes/Jumbotron';
 import Alert from './componentes/Alert';
 import { useState } from 'react';
 import Footer from './componentes/Footer';
-// import Greeting from './Greeting'; 
-// import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 export default function App() {
   const [alert, setAlert] = useState(null)
