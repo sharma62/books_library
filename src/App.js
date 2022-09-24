@@ -1,12 +1,18 @@
 import React from 'react';
+
+// import for use system properties
+import { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+// import for components 
 import Accordion from './componentes/Accordion';
 import Navbar from './componentes/Navbar';
 import Store from './componentes/Store';
 import Jumbotron from './componentes/Jumbotron';
 import Alert from './componentes/Alert';
-import { useState } from 'react';
+// import Profile from './componentes/Profile';
 import Footer from './componentes/Footer';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Greeting from './componentes/Greeting';
 
 export default function App() {
   const [alert, setAlert] = useState(null)
@@ -25,18 +31,20 @@ export default function App() {
 
   return (
     <>
+   
       <Router>
-        <Navbar title="Books_library" features="Home" bookStore="BookStore" mode={Mode} toggleMode={toggleMode} />
+        <Navbar title="Books_library" features="Home" bookStore="BookStore" mode={Mode} toggleMode={toggleMode}  />
         <Alert alert={alert} />
-        <Jumbotron title="Dive in Store" heading="Welcome To Library" helperText="Here you can connect with library" moreInfo="Comming soon" actionSrc="/" mode={Mode} toggleMode={toggleMode} />
+        <Jumbotron title="Dive in Store" heading="Welcome To Library" helperText={<Greeting mode={Mode} toggleMode={toggleMode} />} moreInfo="Comming soon" actionSrc="/" mode={Mode} toggleMode={toggleMode} />
         <Routes>
-
           <Route path="/Store" element={<Store mode={Mode} toggleMode={toggleMode} />} />
+        
+          {/* <Route path="/profile" element={} /> */}
 
         </Routes>
 
-        {/* <Store mode={Mode} toggleMode={toggleMode} /> */}
-        <Accordion title="Text Ground " className="my-5" showAlert={showAlert} mode={Mode} toggleMode={toggleMode} />
+
+         <Accordion title="Text Ground " className="my-5" showAlert={showAlert} mode={Mode} toggleMode={toggleMode} />
         <Footer mode={Mode} ToggleMode={toggleMode} />
 
       </Router>

@@ -28,14 +28,17 @@ export default function Navbar(props) {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link className={`nav-link active`} style={{ color: props.mode === 'dark' ? 'white' : '#042743' }} aria-current="page" to="/">{props.features}</Link>
+              <Link className={`nav-link active`} to="/" style={{ color: props.mode === 'dark' ? 'white' : '#042743' }} aria-current="page" >{props.features}</Link>
             </li>
             <li className="nav-item active ">
               <Link className={`nav-link  `} to="/Store" style={{ color: props.mode === 'dark' ? 'white' : '#042743' }}>{props.bookStore}</Link>
             </li>
+            <li className="nav-item active ">
+              <Link className={`nav-link  `} to="/profile" style={{ color: props.mode === 'dark' ? 'white' : '#042743' }}>Profie</Link>
+            </li>
           </ul>
           <form className="d-flex" role="search">
-            <input className="form-control me-2 git " type="search" placeholder="Search" aria-label="Search" />
+            <input className="form-control me-2 mt-2" type="search" placeholder="Search" aria-label="Search" />
             <button className="btn btn-outline-success" type="submit">Search</button>
           </form>
         </div>

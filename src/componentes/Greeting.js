@@ -1,11 +1,12 @@
+import React from 'react';
 import './Greeting.css';
 
-function Greeting() {
+function Greeting(props) {
 
   let greeting = " ";
-   const currTime = new Date().getHours();
-  
-  let colorCode = { };
+  const currTime = new Date().getHours();
+
+  let colorCode = {};
 
   if (currTime >= 1 && currTime <= 11) {
     greeting = "Good Morning";
@@ -21,12 +22,15 @@ function Greeting() {
   }
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Hello Sir , <span style = {colorCode}> {greeting} </span> </h1>
-      </header>
+    <div className={`container-fluid bg-${props.mode}`}>
+
+      <div className="App container">
+        <header className="App-header">
+         <span style={colorCode}> <h1> {greeting} </h1></span>
+        </header>
+      </div>
     </div>
   );
- }
+}
 
 export default Greeting;
