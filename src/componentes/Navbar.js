@@ -17,7 +17,7 @@ export default function Navbar(props) {
 
   return (
 
-    <nav className={`navbar navbar-expand-lg bg-${props.mode}`} style={{ color: props.mode === 'dark' ? 'white' : '#042743', height: "80px" }}>
+    <nav className={`navbar navbar-expand-lg bg-${props.mode} sticky`} style={{ color: props.mode === 'dark' ? 'white' : '#042743', height: "80px" }}>
 
       <div className="container-fluid">
  
