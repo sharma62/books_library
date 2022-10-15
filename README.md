@@ -2,7 +2,7 @@
 
 * Project page: Not publish yet
 * Repository: https://github.com/sharma62/books_library
-* Version: 0.1.0
+* Version: 0.1.0v
 * License: BSD, see [LICENSE](LICENSE)
 
 ## Description
