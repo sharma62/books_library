@@ -37,6 +37,7 @@ export default function App() {
         <Alert alert={alert} />
         <Jumbotron title="Dive in Store" heading="Welcome To Library" helperText={<Greeting mode={Mode} toggleMode={toggleMode} />} moreInfo="Comming soon" actionSrc="/" mode={Mode} toggleMode={toggleMode} />
         <Routes>
+                                          {/* <Store mode={sendProps} toggleMode={reciveProps}> */}
           <Route path="/Store" element={<Store mode={Mode} toggleMode={toggleMode} />} />
         
           {/* <Route path="/profile" element={} /> */}
