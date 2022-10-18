@@ -6,7 +6,7 @@
 * License: BSD, see [LICENSE](LICENSE)
 
 ## Description
-> A Library where you formate text and read soft copy of multiple books as well as buy.
+> A Library where you formate text and read soft copy of multiple books as well as buy. Apart from this   you have full control for your text with privacy thank you for Reading go and edit text.
 
 ## Installation
 
